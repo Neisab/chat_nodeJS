@@ -6,6 +6,9 @@
         "socket.io": "~1.2.1",
         "ent": "~0.1.0"
     },
+    "scripts": {
+        "start": "node app.js"
+      },
     "author": "Mateo21 <mateo21@email.com>",
     "description": "Un super Chat temps réel avec socket.io"
 }
