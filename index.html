@@ -41,7 +41,8 @@
 		})
 
 		// Lorsqu'on envoie le formulaire, on transmet le message et on l'affiche sur la page
-		$('#formulaire_chat').submit(function () {
+		$('#formulaire_chat').submit(function (e) {
+			e.preventDefault();
 			var message = $('#message').val();
 			socket.emit('message', message); // Transmet le message aux autres
 			insereMessage(pseudo, message); // Affiche le message aussi sur notre page
